@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<title>  SOLAPUR INSTITUTE FOR A BLIND-RESISTATION FORM </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<link rel="stylesheet" href="my style.css"/>
+<style>
+.button{
+display:flex;
+justify-content: center; 
+}
+.button button{
+margin:0.5px;}
+</style>
+</head>
+<body>
+<div>
+<a href="#main-content"> skip to main content </a>
+</div>
+<header>
+<div class="logo">
+<div class="logo_solapur">
+<img src="images/solapur.png" alt="solapur institute  logo "height="90" width="90">
+</div>
+<div class="float">
+<strong>Solapur institute for blind </strong>
+</div>
+<div class="nav">
+<nav >
+<ul>
+<li>
+<a href="home page.html">Home </a>
+</li>
+<li>
+<a href="about us.html"> About us </a>
+</li>
+<li>
+<a href="our project.html"> Our project </a>
+</li>
+<li>
+<a href="resistation form.html"> Register </a>
+</li>
+</ul>
+</div>
+</div>
+
+</header>
+<div id="main-area">
+<main content>
+<h1 id="main-content">Resistation form for 2023 </h1>
+<form>
+<p>
+<label for="fname"> First name:</label>
+<input type="text" id="fname" name="fname" required >
+</p>
+<p>
+<label for="middle"> Middle name:</label>
+<input type="text" id="middle" name="middle name" required >
+</p>
+<p>
+<label for="lname"> Last name:</label>
+<input type="text" id="lname" name="lastname " required >
+</p>
+<label for="mobile"> Contact no: </label>
+<input type="tel" id="mobile" name="contact number" pattern="[+][0-9]{1,3}-[0-9]{10}" placeholder="+91-1234567890" required >
+</p>
+<p>
+<label for="email"> Your mail ID:</label>
+<input type="email" id="email" name="email id" required >
+</p>
+
+<p>
+<label for="address"> Full Address: </p>
+<textarea id="address" name="address" rows="5" cols="30">
+</textarea>
+</p>
+<p>
+<label for="age"> Age:</label>
+<input type="number" id="age" name="age" pattern="[0-9]{1,2}" required >
+</p>
+<p>Gender </p>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male"> Male </label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">female </label>
+
+<p>
+<label for="birthdate"> Birth Date </label>
+<input type="date"id="birthdate" name="birthdate">
+</p>
+<p>Choose Course </p>
+<input type="checkbox" id="basic-computer" name="course1" value="basic computer">
+<label for="basic-computer"> Basic Computer </label><br>
+<input type="checkbox" id="mobility-training" name="course2" value="mobility training">
+<label for="mobility-training"> Mobility Training </label><br>
+<input type="checkbox" id="programming" name="course3" value="programming">
+<label for="programming"> Programming  </label><br>
+<input type="checkbox" id="accessibility" name="course4" value="accessibility">
+<label for="accessibility"> Accessibility Testing  </label><br>
+<input type="checkbox" id="english" name="course5" value="english communication ">
+<label for="english"> English communication </label>
+</p>
+<div class="button">
+<button style="background-color:blue; color:white;" type="button" onclick="displayEnteredData()" >Preview</button>
+<button  style="background-color:green; color:white;" type="submit" onclick="alert()" >Submit </button>
+<script>
+function alert() {
+alert ('your form is done ');}
+</script>
+<button  style="background-color:red; color:white;" type="reset" value="clear form" onclick="alert('your form is cleared !')">Clear form </button>
+</div>
+
+</form>
+
+<p id="user_data"> </p>
+
+<script>
+function displayEnteredData() {
+	let para = document.getElementById("user_data");
+let fn = document.getElementById("fname").value ;
+let ml = document.getElementById("middlename").value;
+let ln = document.getElementById("lname").value ;  
+	para.innerHTML ="The name entered by the user is: " + fn + " " + ml + " " + ln;
+}
+</script>
+</div>
+<footer>
+
+<div class="foot">
+<div class="photo">
+<a href="www.youtube.com"><img src="images/youtube.jpg" alt="youtube" height="80" width="80"></a>
+</div>
+<div class="photo">
+<a href="www.twitter.com"><img src="images/twitter2.png" alt="twitter" height="80" width="80"></a>
+</div>
+<div class="photo">
+<a href="www.linkedin.com"><img src="images/linkedin.png" alt="linkedin"  height="80" width="80"></a>
+</div>
+<div class="photo">
+<a href="www.facebook.com"><img src="images/facebook2.png" alt="facebook" height="50" width="50"></a>
+</div>
+</div>
+<address>
+Visit to us :<br>
+Gandhi nagar,Rang Bhawan Solapur ,Maharastra <br>
+Write to us <br> <a href="mailto:solapur.institute@gmail.com"> solapur.institute@gmail.com </a>
+</address>
+
+</footer>
+
+</body>
+</html>
